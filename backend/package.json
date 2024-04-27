@@ -1,0 +1,17 @@
+{
+  "name": "to-do-app-backend",
+  "version": "1.0.0",
+  "description": "Take-home assignment - Basic To-Do List Application",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "belayhun-arage",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.11.5"
+  }
+}
