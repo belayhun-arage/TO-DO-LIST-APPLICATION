@@ -41,8 +41,39 @@ const updateTodo = async (id, title, description, completed)=> {
   }
 }
 
+// Function to update a todo
+const updateTodoStatus = async (id, completed)=> {
+  const query = 'UPDATE todos SET completed = $2 WHERE id = $1 RETURNING *';
+  const values = [id,completed];
+
+  try {
+    const { rows } = await db.query(query, values);
+    return rows[0];
+  } catch (error) {
+    console.error('Error updating todo:', error);
+    throw error;
+  }
+}
+
+// Function to update a todo
+const deleteTodo = async (id)=> {
+  const query = 'DELETE FROM todos WHERE id = $1 RETURNING *';
+  const values = [id];
+
+  try {
+    const { rows } = await db.query(query, values);
+    console.log(rows)
+    return rows[0];
+  } catch (error) {
+    console.error('Error deleting a todo:', error);
+    throw error;
+  }
+}
+
 export default {
     createTodo,
     getAllTodos,
-    updateTodo
+    updateTodoStatus,
+    updateTodo,
+    deleteTodo
 }
