@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3000/todos';
+const baseUrl = 'https://to-do-list-application-3jcq.onrender.com:10000/todos';
 
 // get html elements by their id
 const inputBox = document.getElementById("input-box");
