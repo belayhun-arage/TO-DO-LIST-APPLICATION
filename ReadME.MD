@@ -1,12 +1,11 @@
 Overview
 
 This To-Do List application is designed to help users manage their tasks efficiently. 
-It utilizes a PostgreSQL database to store task data, a Node.js backend for handling server-side logic, and HTML, CSS, and JavaScript for the frontend interface.
 
 Application Architecture
-1. Frontend: HTML, CSS, and JavaScript.
-2. Backend: Node.js.
-3. Database: PostgreSQL
+1. Frontend: HTML, CSS, and JavaScript for the frontend interface.
+2. Backend: Node.js backend for handling server-side logic.
+3. Database: PostgreSQL to store task data
 
 Project set up
 1. install Node and PostgreSQL

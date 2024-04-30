@@ -12,7 +12,7 @@
       <h1>To Do List Application</h1>
     </div>
 
-    <form id="todo-form">
+    <form id="todo-form" tyle="display: none;">
       <label for="input-box">Title:</label>
       <input type="text" class="input-item" name="input_box" id="input-box" placeholder="Enter a title" required>
       <label for="input-box-description">Description (optional):</label>
@@ -37,6 +37,7 @@
     <div id="deleteModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
+        <h1>Delete Task</h1>
         <p>Are you sure you want to delete this task?</p>
         <button id="confirmDelete">Delete</button>
       </div>
@@ -45,9 +46,13 @@
     <div id="updateModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p>Edit Task</p>
-        <input type="text" id="updateInput" class="input-item" placeholder="Enter updated task">
-        <textarea class="input-item" name="input_box_description" id="updateDescription" placeholder="Enter updated description"></textarea>
+        <h1>Edit Task</h1>
+        <div class="modal-content-update">
+          <label for="updateInput">Title:</label>
+          <input type="text" id="updateInput" class="input-item" placeholder="Enter updated task">
+          <label for="updateDescription">Description:</label>
+          <textarea class="input-item" name="input_box_description" id="updateDescription" placeholder="Enter updated description"></textarea>
+        </div>
         <button id="confirmUpdate">Update</button>
       </div>
     </div>

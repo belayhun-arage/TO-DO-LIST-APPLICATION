@@ -136,11 +136,11 @@ inputBox.addEventListener("keyup", async function (event) {
 function createTaskListItem(task) {
   const listItem = document.createElement('li');
   listItem.innerHTML = `
-    <div id="todo">
+    <div id="todo" class="task-details">
       <input type="checkbox" ${task.completed ? 'checked' : ''}>
       <div data-task-id="${task.id}" style="flex: 1;">
-        <div data-task-title>${task.title}</div>
-        <div data-task-description>${task.description}</div>
+        <div data-task-title class="task-title">${task.title}</div>
+        <div data-task-description class="task-description">${task.description}</div>
       </div>
     </div>
     <button class="edit-btn">Edit</button>

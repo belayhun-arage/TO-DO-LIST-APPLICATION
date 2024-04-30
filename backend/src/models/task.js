@@ -1,5 +1,5 @@
 import  { Sequelize, DataTypes } from 'sequelize';
-const sequelize = new Sequelize('postgres://username:password@localhost:5432/todo_db');
+const sequelize = new Sequelize('postgres://localhost: b@localhost:5432/todos');
 
 const Task = sequelize.define('Task', {
   title: {

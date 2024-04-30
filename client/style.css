@@ -3,6 +3,7 @@ body {
   background-color: #f6f8fa;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 #todo{
@@ -32,6 +33,18 @@ body {
 #input-button {
   display: flex;
   float: right;
+  width: fit-content;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: white;
+  transition: background-color 0.4s;
+}
+
+#confirmDelete,#confirmUpdate {
   width: fit-content;
   font-size: 16px;
   cursor: pointer;
@@ -81,8 +94,27 @@ label {
   margin-bottom: 20px;
 }
 
+.task-details {
+  flex: 1;
+}
+
+.task-title {
+  font-weight: bold; 
+  font-size: 18px; 
+}
+
+.task-description {
+  font-size: 16px; 
+  color: #888;
+}
+
+
 .list-container h2 {
   color: #333;
+}
+
+form button {
+  cursor: pointer;
 }
 
 ul {
@@ -149,6 +181,14 @@ input[type="checkbox"] {
   width: 50%;
   text-align: center;
   border-radius: 5px;
+}
+
+.modal-content-update{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  margin-bottom: 5px;
 }
 
 .close {
